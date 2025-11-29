@@ -7,7 +7,7 @@ spec:
     app: myapp
   ports:
   - port: 80
-    protocol: TCP
     targetPort: 80
-  type: LoadBalancer 
-  
+    protocol: TCP
+    nodePort: 30080   # optional: pick a port between 30000–32767
+  type: NodePort
